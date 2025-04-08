@@ -1,0 +1,26 @@
+from setuptools import setup, find_packages
+import pathlib
+
+
+here = pathlib.Path(__file__).parent.resolve()
+long_description = (here / "README.md").read_text(encoding="utf-8") if (here / "README.md").exists() else ""
+
+setup(
+    name='dpm_utils_functions',
+    version='0.1',
+    description='Conjunto de funciones de utilidades varias',
+    url='https://github.com/DavidP0011/etl_functions',
+    author='David Plaza', 
+    packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
+    python_requires='>=3.7, <4',
+    install_requires=[
+        "google-cloud-secret-manager>=2.7.0",       # Acceso a Secret Manager para autenticación en GCP
+        "google-auth>=2.0.0"                # Utilizado en autenticación con GCP.
+    ],
+    entry_points={
+        # Scripts ejecutables desde la línea de comando
+        # 'console_scripts': [
+        #     'nombre_comando=dpm_functions.modulo:funcion_principal',
+        # ],
+    },
+)
