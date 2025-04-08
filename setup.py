@@ -9,7 +9,7 @@ setup(
     name='dpm_common_functions',
     version='0.1',
     description='Conjunto de funciones de utilidades varias',
-    url='https://github.com/DavidP0011/etl_functions',
+    url='https://github.com/DavidP0011/common_functions',
     author='David Plaza', 
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     python_requires='>=3.7, <4',
