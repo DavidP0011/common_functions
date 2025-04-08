@@ -6,7 +6,7 @@ here = pathlib.Path(__file__).parent.resolve()
 long_description = (here / "README.md").read_text(encoding="utf-8") if (here / "README.md").exists() else ""
 
 setup(
-    name='dpm_utils_functions',
+    name='dpm_common_functions',
     version='0.1',
     description='Conjunto de funciones de utilidades varias',
     url='https://github.com/DavidP0011/etl_functions',
